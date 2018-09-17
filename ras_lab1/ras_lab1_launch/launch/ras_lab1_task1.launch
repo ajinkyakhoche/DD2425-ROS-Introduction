@@ -1,0 +1,8 @@
+<launch>
+
+  <!-- launch the kobuki launch file -->
+  <include file="$(find ras_lab1_launch)/launch/kobuki_lab1.launch" />
+
+  <!-- launch the open loop controller package -->
+  <node pkg="ras_lab_open_loop_control" type="open_loop_controller.cpp" name="open_loop_controller" clear_params="true"  />
+</launch>
